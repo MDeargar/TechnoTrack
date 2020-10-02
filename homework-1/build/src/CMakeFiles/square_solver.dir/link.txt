@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -shared -Wl,-soname,libsquare_solver.so -o ../../lib/libsquare_solver.so CMakeFiles/square_solver.dir/square_equation.c.o 

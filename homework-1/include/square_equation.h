@@ -1,12 +1,21 @@
+#ifndef SQUARE_SOLVER_H
+#define SQUARE_SOLVER_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
 #define INF -1
 
-int Equal(double a, double b) {
-	return fabs(a - b) < 1e-7;
-}
+/*!
+ *	\brief Вспомогательная функция для SolveSquare
+ *	Выполняет сравнение на равенство двух вещественных чисел
+ *	\param[in] a Первое число
+ *	\param[in] b Второе число
+ *	\return Возвращает 1 в случае равенства чисел, 0 - иначе
+ */
+
+int Equal(double a, double b);
 
 /*!
  *	\brief Функция, решающая квадратное уравнение
@@ -19,32 +28,6 @@ int Equal(double a, double b) {
  *	\return Количество различных решений уравнения. Если решений бесконечно, то возвращается дефайн INF. Если хотя бы один из указателей x1, x2 равено нулю, или указатели ссылаются на одну область памяти, то возвращается 0.
  */
 
-int SolveSquare(double a, double b, double c, double* x1, double* x2) {	
-	if (x1 == 0 || x2 == 0 || x1 == x2) {
-		return 0;
-	}
-	
-	if (Equal(a, 0.0)) {
-		if (Equal(b, 0.0)) {
-			if (Equal(c, 0.0)) {
-				return INF;
-			}
+int SolveSquare(double a, double b, double c, double* x1, double* x2);
 
-			return 0;
-		}
-
-		*x1 = -c / b;
-		return 1;
-	}
-
-	double D = b * b - 4 * a * c;
-
-	if (D < 0.0) {
-		return 0;
-	}
-
-	*x1 = (-b - sqrt(D)) / (2 * a);
-	*x2 = (-b + sqrt(D)) / (2 * a);
-
-	return Equal(D, 0.0) ? 1 : 2;
-}
+#endif

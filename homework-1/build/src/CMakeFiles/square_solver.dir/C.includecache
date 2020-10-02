@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/square_equation.h
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+
+/home/mordekaj/Documents/TehnoTrack/homework-1/src/square_equation.c
+square_equation.h
+/home/mordekaj/Documents/TehnoTrack/homework-1/src/square_equation.h
+
