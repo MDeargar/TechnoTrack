@@ -45,4 +45,5 @@
 /home/mordekaj/Documents/TehnoTrack/homework-1/build/src/CMakeFiles/rebuild_cache.dir
 /home/mordekaj/Documents/TehnoTrack/homework-1/build/src/CMakeFiles/edit_cache.dir
 /home/mordekaj/Documents/TehnoTrack/homework-1/build/src/CMakeFiles/test.dir
+/home/mordekaj/Documents/TehnoTrack/homework-1/build/src/CMakeFiles/main_app.dir
 /home/mordekaj/Documents/TehnoTrack/homework-1/build/src/CMakeFiles/square_solver.dir

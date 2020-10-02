@@ -253,6 +253,19 @@ TestSolver/fast:
 .PHONY : TestSolver/fast
 
 #=============================================================================
+# Target rules for targets named main_app
+
+# Build rule for target.
+main_app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main_app
+.PHONY : main_app
+
+# fast build rule for target.
+main_app/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main_app.dir/build.make src/CMakeFiles/main_app.dir/build
+.PHONY : main_app/fast
+
+#=============================================================================
 # Target rules for targets named square_solver
 
 # Build rule for target.
@@ -283,6 +296,7 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... main_app"
 	@echo "... square_solver"
 .PHONY : help
 

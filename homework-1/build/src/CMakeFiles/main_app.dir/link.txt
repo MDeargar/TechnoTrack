@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/main_app.dir/main.c.o  -o ../../bin/main_app  -Wl,-rpath,/home/mordekaj/Documents/TehnoTrack/homework-1/lib ../../lib/libsquare_solver.so -lm 

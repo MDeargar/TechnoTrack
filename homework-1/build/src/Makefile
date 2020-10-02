@@ -188,6 +188,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+src/CMakeFiles/main_app.dir/rule:
+	cd /home/mordekaj/Documents/TehnoTrack/homework-1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/main_app.dir/rule
+.PHONY : src/CMakeFiles/main_app.dir/rule
+
+# Convenience name for target.
+main_app: src/CMakeFiles/main_app.dir/rule
+
+.PHONY : main_app
+
+# fast build rule for target.
+main_app/fast:
+	cd /home/mordekaj/Documents/TehnoTrack/homework-1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main_app.dir/build.make src/CMakeFiles/main_app.dir/build
+.PHONY : main_app/fast
+
+# Convenience name for target.
 src/CMakeFiles/square_solver.dir/rule:
 	cd /home/mordekaj/Documents/TehnoTrack/homework-1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/square_solver.dir/rule
 .PHONY : src/CMakeFiles/square_solver.dir/rule
@@ -201,6 +216,33 @@ square_solver: src/CMakeFiles/square_solver.dir/rule
 square_solver/fast:
 	cd /home/mordekaj/Documents/TehnoTrack/homework-1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/square_solver.dir/build.make src/CMakeFiles/square_solver.dir/build
 .PHONY : square_solver/fast
+
+main.o: main.c.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.c.o:
+	cd /home/mordekaj/Documents/TehnoTrack/homework-1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main_app.dir/build.make src/CMakeFiles/main_app.dir/main.c.o
+.PHONY : main.c.o
+
+main.i: main.c.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.c.i:
+	cd /home/mordekaj/Documents/TehnoTrack/homework-1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main_app.dir/build.make src/CMakeFiles/main_app.dir/main.c.i
+.PHONY : main.c.i
+
+main.s: main.c.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.c.s:
+	cd /home/mordekaj/Documents/TehnoTrack/homework-1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main_app.dir/build.make src/CMakeFiles/main_app.dir/main.c.s
+.PHONY : main.c.s
 
 square_equation.o: square_equation.c.o
 
@@ -242,7 +284,11 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... main_app"
 	@echo "... square_solver"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... square_equation.o"
 	@echo "... square_equation.i"
 	@echo "... square_equation.s"

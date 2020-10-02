@@ -15,7 +15,7 @@
  *	\return Возвращает 1 в случае равенства чисел, 0 - иначе
  */
 
-int Equal(double a, double b);
+extern int Equal(double a, double b);
 
 /*!
  *	\brief Функция, решающая квадратное уравнение
@@ -28,6 +28,6 @@ int Equal(double a, double b);
  *	\return Количество различных решений уравнения. Если решений бесконечно, то возвращается дефайн INF. Если хотя бы один из указателей x1, x2 равено нулю, или указатели ссылаются на одну область памяти, то возвращается 0.
  */
 
-int SolveSquare(double a, double b, double c, double* x1, double* x2);
+extern int SolveSquare(double a, double b, double c, double* x1, double* x2);
 
 #endif
