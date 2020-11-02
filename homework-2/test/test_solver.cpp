@@ -1,8 +1,6 @@
 #include "gtest/gtest.h"
 
-extern "C" {
 #include "square_equation.h"
-}
 
 TEST(square_equation_two_solution, ok) {
 	double a = 1.0;
